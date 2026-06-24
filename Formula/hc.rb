@@ -1,8 +1,8 @@
 class Hc < Formula
   desc "CLI for the healthchecks.io Management API"
   homepage "https://github.com/matt17r/healthchecks-cli"
-  url "https://github.com/matt17r/healthchecks-cli/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "e553c45ef864d274c4344334c1054de8172b8f5c938fcdac600cda2c4a35a7eb"
+  url "https://github.com/matt17r/healthchecks-cli/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "6d72d9c54f614972f74c0ae5e5d2d38f8a8a399587bc5e7513bf6c1eb0ae7235"
   license "MIT"
   head "https://github.com/matt17r/healthchecks-cli.git", branch: "main"
 
