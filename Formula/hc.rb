@@ -1,12 +1,3 @@
-# Homebrew formula for hc.
-#
-# This lives in a *tap* repo named "homebrew-tap" under your GitHub account, at
-# Formula/hc.rb. Once published, users install with:
-#
-#     brew install <matt17r>/tap/hc
-#
-# Replace matt17r below and fill in the sha256 after you tag a release
-# (see RELEASING.md).
 class Hc < Formula
   desc "CLI for the healthchecks.io Management API"
   homepage "https://github.com/matt17r/healthchecks-cli"
