@@ -25,7 +25,7 @@ cask "hc" do
   end
 
   name "hc"
-  desc "A small, dependency-free CLI for the healthchecks.io Management API"
+  desc "Small, dependency-free CLI for the healthchecks.io Management API"
   homepage "https://github.com/matt17r/healthchecks-cli"
 
   livecheck do
@@ -35,11 +35,8 @@ cask "hc" do
   binary "hc"
 
   postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/hc"]
-    end
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/hc"] if OS.mac?
   end
 
   # No zap stanza required
-
 end
